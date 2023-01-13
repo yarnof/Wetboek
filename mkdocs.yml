@@ -1,8 +1,8 @@
 site_name: Wetboek Oosthuizen
 site_url: https://apv.oosthuizenrp.com/
 site_description: Wetboek van Oosthuizen
-# repo_url: https://github.com/OosthuizenRP/OosthuizenWetboek # not needed, if the repo is PRIVATE
-# repo_name: OosthuizenRP/OosthuizenWetboek
+repo_url: https://github.com/OosthuizenRP/Wetboek
+repo_name: OosthuizenRP/Wetboek
 edit_uri: ""
 
 copyright: Copyright &copy; 2022 <a target="_blank" href="https://oosthuizenrp.com/" target="_blank" rel="noopener">OosthuizenRP • <a href="#__consent">Verander cookie consent</a></a>
