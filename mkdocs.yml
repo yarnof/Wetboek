@@ -1,0 +1,71 @@
+site_name: Wetboek Oosthuizen
+site_url: https://apv.oosthuizenrp.com/
+site_description: Wetboek van Oosthuizen
+# repo_url: https://github.com/OosthuizenRP/OosthuizenWetboek # not needed, if the repo is PRIVATE
+# repo_name: OosthuizenRP/OosthuizenWetboek
+edit_uri: ""
+
+copyright: Copyright &copy; 2022 <a target="_blank" href="https://oosthuizenrp.com/" target="_blank" rel="noopener">OosthuizenRP • <a href="#__consent">Verander cookie consent</a></a>
+
+theme:
+  name: material
+  logo: assets/logos/ohlogo.png
+  favicon: assets/logos/ohlogo.png
+  font:
+    text: Montserrat
+  icon:
+    repo: fontawesome/brands/github
+  language: nl
+  palette:
+    scheme: slate
+  features:
+    - search.suggest
+    - search.share 
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.sections
+    - toc.integrate
+    - content.tabs.link
+    #- announce.dismiss // Disabled atm
+plugins: # REMOVE THIS I MURDER UR ASS. #LOOK THE TERMINAL
+- search
+- minify:
+    minify_html: true
+    htmlmin_opts:
+      # https://htmlmin.readthedocs.io/en/latest/reference.html#main-functions
+      remove_comments: true
+      remove_all_empty_space: true
+      reduce_boolean_attributes: true
+      remove_optional_attribute_quotes: true
+      convert_charrefs: true
+    minify_css: true
+    css_files:
+    - assets/stylesheets/custom.css
+    
+extra_css:
+- assets/stylesheets/custom.css
+
+extra:
+  generator: false
+  consent:
+    title: Koekjes beleid
+    actions:
+      - accept
+      - reject
+    description: >-
+       We gebruiken cookies om ook uw herhaalde bezoeken en voorkeuren te herkennen
+       om de effectiviteit van onze documentatie te meten en of gebruikers
+       vinden waarnaar ze op zoek zijn. Met uw toestemming helpt u ons om
+       onze documentatie beter te maken. 
+
+nav:
+  - Home: index.md
+  - Straffen: straffen.md
+  - Algemene Plaatselijke Verordening: apv.md
+  - Dreigingsniveau: dreigingsniveau.md
+
+markdown_extensions:
+- markdown.extensions.admonition
